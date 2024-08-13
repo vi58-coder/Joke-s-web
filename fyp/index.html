@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funny Jokes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <h1>Funny Jokes</h1>
+            <img src="banner-image.jpg" alt="Funny Animal" class="banner-image">
+            <input type="text" class="search-bar" placeholder="Search for jokes...">
+        </div>
+    </header>
+
+    <!-- Carousel Section -->
+    <section class="carousel" id="featured-jokes">
+        <h2>Featured Jokes</h2>
+        <div class="carousel-container">
+            <div class="carousel-item">Joke 1: Why don't scientists trust atoms? Because they make up everything!</div>
+            <div class="carousel-item">Joke 2: What do you call fake spaghetti? An impasta!</div>
+            <div class="carousel-item">Joke 3: Why did the scarecrow win an award? Because he was outstanding in his field!</div>
+        </div>
+    </section>
+
+    <!-- User-Submitted Jokes Section -->
+    <section class="user-jokes" id="user-jokes">
+        <h2>User-Submitted Jokes</h2>
+        <ul>
+            <li>Joke A: Submitted by John Doe</li>
+            <li>Joke B: Submitted by Jane Smith</li>
+            <li>Joke C: Submitted by Bob Johnson</li>
+        </ul>
+        <a href="#submit-joke">Submit your joke</a>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <h2>Categories</h2>
+        <ul>
+            <li><a href="#">Dad Jokes</a></li>
+            <li><a href="#">Knock-Knock Jokes</a></li>
+            <li><a href="#">Animal Jokes</a></li>
+        </ul>
+    </section>
+
+    <!-- Joke of the Day Section -->
+    <section class="joke-of-the-day" id="joke-of-the-day">
+        <h2>Joke of the Day</h2>
+        <p>Why don't skeletons fight each other? They don't have the guts!</p>
+    </section>
+
+    <!-- Joke Page Section -->
+    <section class="joke-page" id="joke-page">
+        <h2>Joke Page</h2>
+        <div class="joke-display">
+            <h3>Joke Title</h3>
+            <p>Why did the chicken join a band? Because it had the drumsticks!</p>
+        </div>
+        <div class="comments">
+            <h3>Comments and Ratings</h3>
+            <ul>
+                <li>John Doe: Hilarious! ★★★★☆</li>
+                <li>Jane Smith: Made my day! ★★★★★</li>
+            </ul>
+        </div>
+        <a href="#home">Back to Homepage</a>
+    </section>
+
+    <!-- User Submission Form Section -->
+    <section class="submission-form" id="submit-joke">
+        <h2>Submit a Joke</h2>
+        <form action="#">
+            <label for="title">Joke Title:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="joke-text">Joke Text:</label>
+            <textarea id="joke-text" name="joke-text" required></textarea>
+
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="tos">
+                <input type="checkbox" id="tos" name="tos" required> I agree to the <a href="#">terms of service</a>.
+            </label>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- User Profile Page Section -->
+    <section class="user-profile" id="profile">
+        <h2>Your Profile</h2>
+        <h3>Your Submitted Jokes</h3>
+        <ul>
+            <li>Joke 1: Why did the tomato turn red? Because it saw the salad dressing!</li>
+            <li>Joke 2: I'm reading a book on anti-gravity. It's impossible to put down!</li>
+        </ul>
+        <h3>Your Favorite Jokes</h3>
+        <ul>
+            <li>Joke A: What did one wall say to the other? I'll meet you at the corner!</li>
+        </ul>
+        <a href="mailto:user@example.com">user@example.com</a>
+    </section>
+
+    <!-- Social Media Section -->
+    <footer>
+        <div class="social-media">
+            <h2>Share Your Favorite Jokes</h2>
+            <a href="#">Facebook</a> |
+            <a href="#">Twitter</a> |
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
