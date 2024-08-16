@@ -16,7 +16,7 @@ body {
     background-color: #fff;
 }
 
-header, section, footer {
+header, section, footer{
     padding: 20px;
     max-width: 1200px;
     margin: 20px auto;
@@ -51,31 +51,92 @@ header h1 {
     border: 1px solid #ccc;
 }
 
-/* Carousel Styles */
-.carousel h2 {
-    font-size: 2em;
+.featured-container{
+    padding-top: 1.5rem;
 }
 
-.carousel{
-    background-color: white;
+.featured-item{
+    padding-bottom: 10px;
+    line-height: 22px
 }
 
-.carousel-container {
+/* Joke Page Styles */
+
+.joke-page{
     display: flex;
-    overflow-x: auto;
-    padding: 10px 0;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
 
+.custom{
+    text-align: center;
+}
+
+/* Carousel Styles */
+.carousel-track h2{
+    padding-bottom: 1.5rem;
+}
+.carousel-container {
+    position: relative;
+    height: 100%;
+    max-width: 600px;
+    /*overflow: hidden;*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
 }
 
 .carousel-item {
-    min-width: 300px;
-    margin-right: 20px;
-    padding: 20px;
-    background-color: #FCFEFD;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    text-align: center;
+    min-width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #0275d8;
+    color: white;
 }
+
+/* Carousel Controls */
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 2em;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.carousel-control.left {
+    left: 10px;
+}
+
+.carousel-control.right {
+    right: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 200px;
+    }
+
+    .carousel-control {
+        font-size: 1.5em;
+        padding: 8px;
+    }
+}
+
 
 /* User-Submitted Jokes Styles */
 .user-jokes h2, .categories h2, .joke-of-the-day h2, .joke-page h2, .submission-form h2, .user-profile h2 {
@@ -96,12 +157,51 @@ header h1 {
     text-decoration: none;
 }
 
-.user-jokes a:hover, .categories a:hover, .social-media a:hover {
+/*.user-jokes a:hover, .categories a:hover, .social-media a:hover {
     text-decoration: underline;
+}*/
+
+.user-jokes ul{
+    padding: 1.5rem 0;
 }
 
-.meta{
+.user-jokes a{
+   background-color: #2bc884;
+   color: white;
+   border: none;
+   border-radius: 7px;
+   padding: 10px;
+   transition: .5s ease;
+}
+
+.user-jokes a:hover{
+    background-color: #15935c;
+}
+
+.categories ul{
+    padding-top: 1.5rem;
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+}
+
+.categories ul li{
+    background-color: #2bc884;
+    padding: 10px 8px;
     text-align: center;
+    border-radius: 6px;
+}
+
+
+
+.categories ul li a{
+    color: white;
+}
+
+.joke-of-the-day p{
+    padding: 1rem 0;
+    line-height: 24px;
+    
 }
 
 /* Submission Form Styles */
@@ -140,14 +240,21 @@ header h1 {
     background-color: #0056b3;
 }
 
-/* Joke Page Styles */
-.joke-page .joke-display p {
-    font-size: 1.8em;
-    margin: 20px 0;
-}
+
 
 .comments ul {
-    margin-top: 20px;
+    margin-top:px;
+}
+
+.submit-container{
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.submit-container ul li{
+    line-height: 22px;
 }
 
 /* Social Media Styles */
@@ -158,6 +265,10 @@ footer .social-media {
 footer h2 {
     font-size: 1.5em;
     margin-bottom: 10px;
+}
+
+.social-media a{
+    color: grey;
 }
 
 /* Responsive Styles */
